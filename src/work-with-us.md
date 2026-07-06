@@ -1,5 +1,5 @@
 ---
-layout: layouts/base.njk
+layout: layouts/base.liquid
 title: Work with Us
 ---
 
@@ -42,7 +42,7 @@ We will provide you with a detailed report including high-resolution images, com
 
 To discuss how we can help with your component assessment needs, please contact us:
 
-{% include "components/contact-link.njk" %}
+{% include "components/contact-link.liquid" %}
 
 We aim to respond to all enquiries within five working days.
 

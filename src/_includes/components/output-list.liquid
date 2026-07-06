@@ -1,0 +1,53 @@
+{% assign publications = outputs | where: "type", "publication" %}
+<section class="output-group">
+  <h2>Publications</h2>
+  {%- if publications.size %}
+  <ul class="output-list">
+    {%- for item in publications %}
+    <li>
+      <p class="output-list__title"><a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">{{ item.title }}</a></p>
+      {%- if item.authors %}<p class="output-list__meta">{{ item.authors }}{% if item.year %} ({{ item.year }}){% endif %}</p>{%- endif %}
+      <p class="output-list__description">{{ item.description }}</p>
+    </li>
+    {%- endfor %}
+  </ul>
+  {%- else %}
+  <p class="output-empty">No publications listed yet.</p>
+  {%- endif %}
+</section>
+
+{% assign datasets = outputs | where: "type", "dataset" %}
+<section class="output-group">
+  <h2>Datasets</h2>
+  {%- if datasets.size %}
+  <ul class="output-list">
+    {%- for item in datasets %}
+    <li>
+      <p class="output-list__title"><a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">{{ item.title }}</a></p>
+      {%- if item.authors %}<p class="output-list__meta">{{ item.authors }}{% if item.year %} ({{ item.year }}){% endif %}</p>{%- endif %}
+      <p class="output-list__description">{{ item.description }}</p>
+    </li>
+    {%- endfor %}
+  </ul>
+  {%- else %}
+  <p class="output-empty">No datasets listed yet.</p>
+  {%- endif %}
+</section>
+
+{% assign software = outputs | where: "type", "software" %}
+<section class="output-group">
+  <h2>Software</h2>
+  {%- if software.size %}
+  <ul class="output-list">
+    {%- for item in software %}
+    <li>
+      <p class="output-list__title"><a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">{{ item.title }}</a></p>
+      {%- if item.authors %}<p class="output-list__meta">{{ item.authors }}{% if item.year %} ({{ item.year }}){% endif %}</p>{%- endif %}
+      <p class="output-list__description">{{ item.description }}</p>
+    </li>
+    {%- endfor %}
+  </ul>
+  {%- else %}
+  <p class="output-empty">No software listed yet.</p>
+  {%- endif %}
+</section>

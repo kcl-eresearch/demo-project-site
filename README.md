@@ -16,7 +16,7 @@ An academic research website for the Electron Microscopy Surface Defect Research
 ## Tech Stack
 
 - **Static Site Generator**: [Eleventy](https://www.11ty.dev/) 3.x
-- **Template Engine**: Nunjucks (`.njk`) for layouts and components; Markdown (`.md`) for content pages
+- **Template Engine**: Liquid (`.liquid`) for layouts and components; Markdown (`.md`) for all content pages (processed with Liquid by default)
 - **Package Manager**: pnpm
 - **Hosting**: GitHub Pages via GitHub Actions
 - **Fonts**: Impact (headings), Georgia (body) — system fonts, no web font downloads
@@ -49,25 +49,25 @@ pnpm run build-ghpages    # Builds with --pathprefix=/demo-project-site/
 src/
 ├── _includes/
 │   ├── layouts/
-│   │   └── base.njk           # Base HTML shell (skip link, nav, main, footer)
+│   │   └── base.liquid        # Base HTML shell (skip link, nav, main, footer)
 │   └── components/
-│       ├── nav.njk            # Left navigation with aria-current active state
-│       ├── team-card.njk      # Reusable team member card
-│       ├── output-list.njk    # Outputs grouped by type (publications, datasets, software)
-│       └── contact-link.njk  # Mailto link with visible text fallback
+│       ├── nav.liquid         # Left navigation with aria-current active state
+│       ├── team-card.liquid   # Reusable team member card
+│       ├── output-list.liquid # Outputs grouped by type (publications, datasets, software)
+│       └── contact-link.liquid # Mailto link with visible text fallback
 ├── _data/
 │   ├── site.json              # Site metadata (name, institution, contact email, nav items)
-│   ├── team.json             # Team members (name, role, bio, photo)
-│   └── outputs.json          # Research outputs (title, type, description, url)
+│   ├── team.json              # Team members (name, role, bio, photo)
+│   └── outputs.json           # Research outputs (title, type, description, url)
 ├── assets/
 │   ├── css/
 │   │   └── styles.css         # Brand styles, responsive layout, component styles
 │   └── images/
 │       └── team/              # Team member photographs
-├── index.md                  # Home page
+├── index.md                   # Home page
 ├── about.md                   # About page
-├── team.njk                   # Team page (data-driven)
-├── outputs.njk                # Outputs page (data-driven)
+├── team.md                    # Team page (data-driven)
+├── outputs.md                 # Outputs page (data-driven)
 └── work-with-us.md            # Work with Us page
 ```
 

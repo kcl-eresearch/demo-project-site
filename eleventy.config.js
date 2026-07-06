@@ -19,8 +19,8 @@ export const config = {
     data: "_data",
     output: "_site",
   },
-  markdownTemplateEngine: "njk",
-  htmlTemplateEngine: "njk",
-  templateFormats: ["md", "njk", "html"],
+  markdownTemplateEngine: "liquid",
+  htmlTemplateEngine: "liquid",
+  templateFormats: ["md"],
   pathPrefix: "/",
 };

@@ -12,13 +12,13 @@
       <aside class="sidebar">
         <p class="sidebar__title"><a href="{{ "/" | url }}">{{ site.name }}</a></p>
         <p class="sidebar__institution">{{ site.institution }}</p>
-        {% include "components/nav.njk" %}
+        {% include "components/nav.liquid" %}
         <div class="sidebar__contact">
           <p>Contact: <a href="mailto:{{ site.contactEmail }}">{{ site.contactEmail }}</a></p>
         </div>
       </aside>
       <main class="content" id="main-content">
-        {{ content | safe }}
+        {{ content }}
         <footer class="site-footer">
           <p>{{ site.name }} — {{ site.institution }}</p>
         </footer>

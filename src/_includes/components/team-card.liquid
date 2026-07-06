@@ -1,9 +1,9 @@
 <article class="team-card">
-  {% if member.photo %}
+  {%- if member.photo != "" %}
   <img class="team-card__photo" src="{{ member.photo | url }}" alt="Photograph of {{ member.name }}">
-  {% else %}
-  <div class="team-card__placeholder" aria-hidden="true">{{ member.name | first }}</div>
-  {% endif %}
+  {%- else %}
+  <div class="team-card__placeholder" aria-hidden="true">{{ member.name | slice: 0 }}</div>
+  {%- endif %}
   <div class="team-card__body">
     <h2>{{ member.name }}</h2>
     <p class="team-card__role">{{ member.role }}</p>
