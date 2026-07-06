@@ -1,6 +1,6 @@
 # Electron Microscopy Surface Defect Research Website
 
-An academic research website for the Electron Microscopy Surface Defect Research project at King's College London. Built with Eleventy 3.x and deployed to GitHub Pages.
+An example academic research website demonstrating a static project site for the (fictional) Electron Microscopy Surface Defect Research project at King's College London. Built with Eleventy 3.x and deployed to GitHub Pages.
 
 ## Features
 
@@ -9,6 +9,7 @@ An academic research website for the Electron Microscopy Surface Defect Research
 - **The Team** — Team member profiles with photos (graceful degradation when no photo available)
 - **Outputs** — Research publications, datasets, and software grouped by type, each linking to the full resource
 - **Work with Us** — Commercial engagement process with a mailto contact link
+- **Example site banner** — Persistent banner on every page making clear this is an example static site with fictional people and outputs
 - **Left-side navigation** — Persistent sidebar on every page with active state highlighting
 - **Responsive** — Desktop, tablet, and mobile layouts
 - **Accessible** — WCAG 2.1 level AA conformance (skip link, keyboard navigation, semantic landmarks, focus visible, aria-current)
