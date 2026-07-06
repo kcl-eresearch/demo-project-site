@@ -120,11 +120,11 @@
 
 **Purpose**: Final validation, documentation, and cross-cutting verification
 
-- [ ] T024 [P] Create `README.md` with project overview, features, tech stack (Eleventy 3.x, GitHub Pages), setup instructions, directory structure, and data model summary
-- [ ] T025 [P] Run quickstart.md validation scenarios VS-1 through VS-10 to verify all functional requirements
-- [ ] T026 [P] Verify WCAG 2.1 AA conformance across all pages: skip link, keyboard navigation, visible focus, `aria-current` on active nav, image alt text, semantic landmarks (`<nav>`, `<main>`, `<header>`), `<html lang="en">`, unique page titles, colour contrast (King's Red on white)
-- [ ] T027 Verify responsive layout: test all pages at desktop (>= 1024px), tablet (768px), and mobile (375px) widths — left nav remains usable, content reflows, no horizontal scroll on mobile
-- [ ] T028 Verify GitHub Pages production build: run `npx @11ty/eleventy --pathprefix=/demo-project-site/` and confirm all links and assets resolve correctly with the path prefix
+- [X] T024 [P] Create `README.md` with project overview, features, tech stack (Eleventy 3.x, GitHub Pages), setup instructions, directory structure, and data model summary
+- [X] T025 [P] Run quickstart.md validation scenarios VS-1 through VS-10 to verify all functional requirements
+- [X] T026 [P] Verify WCAG 2.1 AA conformance across all pages: skip link, keyboard navigation, visible focus, `aria-current` on active nav, image alt text, semantic landmarks (`<nav>`, `<main>`, `<header>`), `<html lang="en">`, unique page titles, colour contrast (King's Red on white)
+- [X] T027 Verify responsive layout: test all pages at desktop (>= 1024px), tablet (768px), and mobile (375px) widths — left nav remains usable, content reflows, no horizontal scroll on mobile
+- [X] T028 Verify GitHub Pages production build: run `npx @11ty/eleventy --pathprefix=/demo-project-site/` and confirm all links and assets resolve correctly with the path prefix
 
 ---
 
