@@ -74,9 +74,9 @@
 
 ### Implementation for User Story 2
 
-- [ ] T013 [P] [US2] Create `src/_includes/components/contact-link.njk` — mailto link component using `site.contactEmail`, rendering the email as both a `<a href="mailto:...">` link and visible copyable text (per FR-009 and edge case: no email client configured)
-- [ ] T014 [US2] Create `src/work-with-us.md` with frontmatter `layout: layouts/base.njk` and `title: "Work with Us"`, explaining how a commercial engineering company can engage the team to assess components for defects, and including the `contact-link.njk` component (depends on T013)
-- [ ] T015 [US2] Verify Work with Us page renders at `/work-with-us/` with engagement process explanation, visible mailto link, no form fields or data collection, and meets SC-003 (engagement process and contact identifiable within 3 minutes)
+- [X] T013 [P] [US2] Create `src/_includes/components/contact-link.njk` — mailto link component using `site.contactEmail`, rendering the email as both a `<a href="mailto:...">` link and visible copyable text (per FR-009 and edge case: no email client configured)
+- [X] T014 [US2] Create `src/work-with-us.md` with frontmatter `layout: layouts/base.njk` and `title: "Work with Us"`, explaining how a commercial engineering company can engage the team to assess components for defects, and including the `contact-link.njk` component (depends on T013)
+- [X] T015 [US2] Verify Work with Us page renders at `/work-with-us/` with engagement process explanation, visible mailto link, no form fields or data collection, and meets SC-003 (engagement process and contact identifiable within 3 minutes)
 
 **Checkpoint**: User Stories 1 AND 2 both work independently — site now explains the method and enables commercial engagement.
 
