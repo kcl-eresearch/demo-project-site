@@ -3,7 +3,7 @@
     "title": "Novel electron microscopy techniques for defect detection in engineering components",
     "type": "publication",
     "description": "Peer-reviewed paper on surface defect identification methods using scanning electron microscopy combined with automated image analysis.",
-    "url": "https://doi.org/10.1234/example.defect.2024",
+    "url": "https://example.com/publication-defect-2024",
     "year": 2024,
     "authors": "Smith, J., Doe, J., Patel, R."
   },
@@ -11,7 +11,7 @@
     "title": "Characterisation of fatigue crack initiation sites in nickel-based superalloys",
     "type": "publication",
     "description": "Study examining the microstructural features that act as fatigue crack initiation sites in turbine blade materials using TEM and EBSD.",
-    "url": "https://doi.org/10.1234/example.superalloy.2023",
+    "url": "https://example.com/publication-superalloy-2023",
     "year": 2023,
     "authors": "Smith, J., Chen, L."
   },
@@ -19,7 +19,7 @@
     "title": "Surface defect dataset v1.0",
     "type": "dataset",
     "description": "Annotated scanning electron microscopy images of surface defects in engineering steel components, with defect type labels and severity classifications.",
-    "url": "https://zenodo.org/record/example-surface-defect-dataset",
+    "url": "https://example.com/dataset-surface-defect",
     "year": 2024,
     "authors": "Doe, J., Smith, J."
   },
@@ -27,7 +27,7 @@
     "title": "Defect analyser tool",
     "type": "software",
     "description": "Open-source Python software for automated classification of surface defects from electron microscopy images using machine learning.",
-    "url": "https://github.com/example/defect-analyser",
+    "url": "https://example.com/software-defect-analyser",
     "year": 2025,
     "authors": "Patel, R."
   }

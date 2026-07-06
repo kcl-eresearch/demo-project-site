@@ -1,7 +1,7 @@
 {
   "name": "Electron Microscopy Surface Defect Research",
   "institution": "King's College London",
-  "contactEmail": "project-team@kcl.ac.uk",
+  "contactEmail": "project-team@example.com",
   "navItems": [
     { "label": "About", "url": "/about/" },
     { "label": "The Team", "url": "/team/" },

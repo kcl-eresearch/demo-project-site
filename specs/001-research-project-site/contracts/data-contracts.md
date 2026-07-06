@@ -21,7 +21,7 @@ All data is stored as JSON files in `src/_data/`. Eleventy reads these automatic
 {
   "name": "Electron Microscopy Surface Defect Research",
   "institution": "King's College London",
-  "contactEmail": "project-team@kcl.ac.uk",
+  "contactEmail": "project-team@example.com",
   "navItems": [
     { "label": "About", "url": "/about/" },
     { "label": "The Team", "url": "/team/" },
@@ -86,7 +86,7 @@ All data is stored as JSON files in `src/_data/`. Eleventy reads these automatic
     "title": "Novel electron microscopy techniques for defect detection",
     "type": "publication",
     "description": "Peer-reviewed paper on surface defect identification methods.",
-    "url": "https://doi.org/10.1234/example",
+    "url": "https://example.com/publication-defect",
     "year": 2024,
     "authors": "Smith, J., Doe, J."
   },
@@ -94,14 +94,14 @@ All data is stored as JSON files in `src/_data/`. Eleventy reads these automatic
     "title": "Surface defect dataset v1.0",
     "type": "dataset",
     "description": "Annotated microscopy images of surface defects in engineering components.",
-    "url": "https://zenodo.org/record/example",
+    "url": "https://example.com/dataset-surface-defect",
     "year": 2024
   },
   {
     "title": "Defect analyzer tool",
     "type": "software",
     "description": "Open-source software for automated defect classification.",
-    "url": "https://github.com/example/defect-analyzer",
+    "url": "https://example.com/software-defect-analyzer",
     "year": 2025
   }
 ]
