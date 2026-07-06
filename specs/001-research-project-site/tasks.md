@@ -27,10 +27,10 @@
 
 **Purpose**: Project initialization, Eleventy configuration, and deployment pipeline
 
-- [ ] T001 Create directory structure per plan.md: `src/_includes/layouts/`, `src/_includes/components/`, `src/_data/`, `src/assets/css/`, `src/assets/images/team/`
-- [ ] T002 Expand `eleventy.config.js` with callback function shape for Configuration API access (passthrough copy for `src/assets`, Nunjucks as markdown and HTML template engine, html/Markdown template engine set to `njk`)
-- [ ] T003 [P] Add `build`, `build-ghpages`, and `serve` scripts to `package.json`
-- [ ] T004 [P] Create GitHub Actions deployment workflow in `.github/workflows/deploy-gh-pages.yml` (pnpm install, build with `--pathprefix=/demo-project-site/`, upload artifact, deploy to Pages)
+- [X] T001 Create directory structure per plan.md: `src/_includes/layouts/`, `src/_includes/components/`, `src/_data/`, `src/assets/css/`, `src/assets/images/team/`
+- [X] T002 Expand `eleventy.config.js` with callback function shape for Configuration API access (passthrough copy for `src/assets`, Nunjucks as markdown and HTML template engine, html/Markdown template engine set to `njk`)
+- [X] T003 [P] Add `build`, `build-ghpages`, and `serve` scripts to `package.json`
+- [X] T004 [P] Create GitHub Actions deployment workflow in `.github/workflows/deploy-gh-pages.yml` (pnpm install, build with `--pathprefix=/demo-project-site/`, upload artifact, deploy to Pages)
 
 ---
 
