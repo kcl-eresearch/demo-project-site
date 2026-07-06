@@ -1,0 +1,6 @@
+# Dependencies
+.pnpm-store/
+node_modules/
+
+# Output
+_site/
