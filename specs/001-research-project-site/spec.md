@@ -8,6 +8,13 @@
 
 **Input**: User description: "We're building an academic website for a research project team at King's College London. The project uses electron microscopy to identify surface defects in engineering components. The site should have a navbar on the left side which links to all pages. The pages are: 'the team' - bios and photos of the project team; 'outputs' - a place to list publications, datasets and software; 'work with us' - a page about how you as a commercial engineering company can work with them to assess your components for defects; 'about' - a much more detailed description of how the method works and what it can be used for."
 
+## Clarifications
+
+### Session 2026-07-06
+
+- Q: How should a commercial company initiate contact on the "Work with Us" page? → A: Display a project email address as a mailto link; the site collects no personal data.
+- Q: Which accessibility conformance level should the site target? → A: WCAG 2.1 level AA (UK public-sector standard).
+
 ## User Scenarios & Testing *(mandatory)*
 
 ### User Story 1 - Understand the Research Method and Applications (Priority: P1)
@@ -37,7 +44,7 @@ A commercial engineering company that manufactures or maintains components wants
 **Acceptance Scenarios**:
 
 1. **Given** a representative of a commercial engineering company on the site, **When** they open the "Work with Us" page, **Then** they see an explanation of how the team can assess their components for defects and what the collaboration involves.
-2. **Given** a commercial visitor on the "Work with Us" page, **When** they decide to proceed, **Then** they can find a clear contact method (email address or contact details) to initiate the engagement.
+2. **Given** a commercial visitor on the "Work with Us" page, **When** they decide to proceed, **Then** they can find a displayed project email address (as a mailto link) to initiate the engagement.
 3. **Given** a commercial visitor who wants to validate the team's credibility, **When** they navigate to "The Team" and "Outputs", **Then** they can review the team's expertise and prior publications, datasets, and software.
 
 ---
@@ -81,6 +88,7 @@ A visitor wants to know who is behind the research — to assess credibility, fi
 - What happens when a visitor accesses the site on a small screen (mobile)? The left-side navigation must remain usable and not overflow or hide page links.
 - What happens when a visitor lands on a deep link to a specific page rather than the home page? The left navigation must still be present so they can orient themselves and reach other pages.
 - What happens when a commercial partner tries to make contact but the contact details are out of date? The site must present a clear, primary contact route that the team can keep current.
+- What happens when a visitor clicks the contact email link but has no email client configured? The email address must also be shown as visible, copyable text so it can be used manually.
 
 ## Requirements *(mandatory)*
 
@@ -94,10 +102,11 @@ A visitor wants to know who is behind the research — to assess credibility, fi
 - **FR-006**: The site MUST include an "Outputs" page listing the project's publications, datasets, and software, grouped by output type.
 - **FR-007**: Each output entry MUST link to its full underlying resource (the publication, the dataset, or the software).
 - **FR-008**: The site MUST include a "Work with Us" page explaining how a commercial engineering company can engage the team to assess their components for surface defects.
-- **FR-009**: The "Work with Us" page MUST provide a clear contact pathway (contact details) enabling a commercial company to initiate engagement.
+- **FR-009**: The "Work with Us" page MUST display a project email address as a mailto link, enabling a commercial company to initiate engagement. The site MUST NOT collect personal data through this contact pathway.
 - **FR-010**: The site MUST display correctly and remain navigable across desktop, tablet, and mobile screen sizes.
 - **FR-011**: The site MUST present all content in clear, non-technical language appropriate for a mixed audience of academics, industry professionals, and the interested public.
 - **FR-012**: The site MUST clearly identify the project as belonging to King's College London.
+- **FR-013**: The site MUST meet WCAG 2.1 level AA conformance across all pages, covering perceivable, operable, understandable, and robust guidelines (e.g., text alternatives for images, keyboard navigation, sufficient colour contrast, and predictable page structure).
 
 ### Key Entities *(include if feature involves data)*
 
@@ -115,6 +124,7 @@ A visitor wants to know who is behind the research — to assess credibility, fi
 - **SC-004**: 100% of outputs listed on the Outputs page are categorised by type and link to their full underlying resource.
 - **SC-005**: Every page renders correctly and remains fully navigable on desktop, tablet, and mobile screen sizes.
 - **SC-006**: The site becomes interactive for a visitor within 3 seconds on a standard broadband connection.
+- **SC-007**: All pages pass WCAG 2.1 level AA validation against the published checklist criteria (e.g., automated and manual accessibility audits report no level AA failures).
 
 ## Assumptions
 
@@ -122,7 +132,8 @@ A visitor wants to know who is behind the research — to assess credibility, fi
 - All content (team biographies, photographs, publication lists, datasets, software links, and method descriptions) will be supplied by the project team at King's College London.
 - The site is primarily aimed at a UK academic and engineering-industry audience but should be accessible to international visitors.
 - All content is in English.
-- Engagement with commercial partners is initiated via contact details (e.g., an email address) rather than a live booking or transaction system.
+- As a King's College London site, the site falls under the UK Public Sector Bodies (Websites and Mobile Applications) (No. 2) Accessibility Regulations 2018, so it targets WCAG 2.1 level AA conformance.
+- Engagement with commercial partners is initiated via a displayed project email address (mailto link) rather than a live booking, transaction system, or contact form; the site does not collect personal data.
 - The number of team members and outputs is small enough (typical for a single research project) that all items can be listed directly without search, filtering, or pagination.
 - Content is updated periodically by the project team rather than continuously contributed by visitors.
 - A landing/home page exists in addition to the four named pages to introduce the project and orient first-time visitors.
