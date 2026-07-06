@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "npx @11ty/eleventy",
-    "build-ghpages": "npx @11ty/eleventy --pathprefix=/demo-project-site/",
-    "serve": "npx @11ty/eleventy --serve"
+    "build": "pnpx @11ty/eleventy",
+    "build-ghpages": "pnpx @11ty/eleventy --pathprefix=/demo-project-site/",
+    "serve": "pnpx @11ty/eleventy --serve"
   },
   "keywords": [],
   "author": "",
