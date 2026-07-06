@@ -59,8 +59,8 @@
 
 ### Implementation for User Story 1
 
-- [ ] T011 [P] [US1] Create `src/about.md` with frontmatter `layout: layouts/base.njk` and `title: "About"`, containing a detailed, structured description of how electron microscopy identifies surface defects in engineering components — covering the method, its applications, and its limitations per FR-004
-- [ ] T012 [US1] Verify About page renders at `/about/` with correct active nav state, content covers method/applications/limitations, and meets SC-002 (reader can explain method and 3 applications after 5 minutes)
+- [X] T011 [P] [US1] Create `src/about.md` with frontmatter `layout: layouts/base.njk` and `title: "About"`, containing a detailed, structured description of how electron microscopy identifies surface defects in engineering components — covering the method, its applications, and its limitations per FR-004
+- [X] T012 [US1] Verify About page renders at `/about/` with correct active nav state, content covers method/applications/limitations, and meets SC-002 (reader can explain method and 3 applications after 5 minutes)
 
 **Checkpoint**: User Story 1 fully functional — About page delivers the core value of explaining the research method. This is the MVP.
 
