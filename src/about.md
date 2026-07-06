@@ -3,9 +3,9 @@ layout: layouts/base.liquid
 title: About
 ---
 
-# About the Project
+# About the project
 
-## The Method
+## The method
 
 Our research uses **electron microscopy** to identify and characterise surface defects in engineering components. Electron microscopy offers resolution far beyond conventional optical microscopy, enabling us to visualise features at the micro- and nanometre scale.
 
@@ -18,7 +18,7 @@ Two primary techniques are used:
 
 In some cases, **Energy-Dispersive X-ray Spectroscopy (EDS)** is combined with SEM or TEM to determine the elemental composition of defects, helping to identify the origin of inclusions or the nature of corrosion products.
 
-## What the Method Can Detect
+## What the method can detect
 
 The electron microscopy method is capable of identifying a wide range of surface and sub-surface defects, including:
 
@@ -29,7 +29,7 @@ The electron microscopy method is capable of identifying a wide range of surface
 - **Grain boundary anomalies**: Irregularities at the boundaries between crystalline grains that may affect material properties.
 - **Surface roughness**: Deviations from intended surface finish specifications.
 
-## Engineering Applications
+## Engineering applications
 
 The method has broad applicability across engineering sectors:
 
@@ -45,7 +45,7 @@ The method has broad applicability across engineering sectors:
 
 6. **Additive Manufacturing**: Characterising the surface quality and microstructure of 3D-printed metal components, where defects such as lack-of-fusion and keyhole porosity can significantly affect mechanical properties.
 
-## What the Method Can and Cannot Do
+## What the method can and cannot do
 
 ### Strengths
 
@@ -62,7 +62,7 @@ The method has broad applicability across engineering sectors:
 - **Cost and time**: Electron microscopy is more expensive and time-consuming than conventional non-destructive testing methods such as ultrasonic or radiographic inspection.
 - **Not a replacement for NDT**: The method complements, rather than replaces, conventional non-destructive testing. It is best used for detailed investigation of defects already identified by other methods, or for research and development purposes.
 
-## Our Approach
+## Our approach
 
 At King's College London, our research group combines electron microscopy with advanced image analysis and machine learning techniques to automate the identification and classification of surface defects. This approach aims to reduce the time and expertise required for defect analysis, making the method more accessible to industrial partners.
 

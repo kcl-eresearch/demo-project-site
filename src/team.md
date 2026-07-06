@@ -1,9 +1,9 @@
 ---
 layout: layouts/base.liquid
-title: The Team
+title: The team
 ---
 
-# The Team
+# The team
 
 Our research team brings together expertise in electron microscopy, materials science, and machine learning to advance the understanding of surface defects in engineering components.
 

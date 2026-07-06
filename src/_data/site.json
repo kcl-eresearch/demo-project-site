@@ -4,8 +4,8 @@
   "contactEmail": "project-team@example.com",
   "navItems": [
     { "label": "About", "url": "/about/" },
-    { "label": "The Team", "url": "/team/" },
+    { "label": "The team", "url": "/team/" },
     { "label": "Outputs", "url": "/outputs/" },
-    { "label": "Work with Us", "url": "/work-with-us/" }
+    { "label": "Work with us", "url": "/work-with-us/" }
   ]
 }

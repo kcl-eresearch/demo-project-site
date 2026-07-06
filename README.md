@@ -4,13 +4,14 @@ An example academic research website demonstrating a static project site for the
 
 ## Features
 
-- **Home page** — Project overview with links to all sections
+- **Home page** — Hero banner, project overview, and links to all sections
 - **About** — Detailed description of the electron microscopy method, its applications, and limitations
 - **The Team** — Team member profiles with photos (graceful degradation when no photo available)
 - **Outputs** — Research publications, datasets, and software grouped by type, each linking to the full resource
 - **Work with Us** — Commercial engagement process with a mailto contact link
 - **Example site banner** — Persistent banner on every page making clear this is an example static site with fictional people and outputs
 - **Left-side navigation** — Persistent sidebar on every page with active state highlighting
+- **King's brand theme** — Impact/Georgia typography, King's colour palette, hero and alternate section treatments
 - **Responsive** — Desktop, tablet, and mobile layouts
 - **Accessible** — WCAG 2.1 level AA conformance (skip link, keyboard navigation, semantic landmarks, focus visible, aria-current)
 
@@ -21,7 +22,7 @@ An example academic research website demonstrating a static project site for the
 - **Package Manager**: pnpm
 - **Hosting**: GitHub Pages via GitHub Actions
 - **Fonts**: Impact (headings), Georgia (body) — system fonts, no web font downloads
-- **Brand Colour**: King's Red `#E2231A`
+- **Branding**: King's colour palette and recommended theme (see [specs/kings-branding.md](specs/kings-branding.md))
 
 ## Setup
 
@@ -92,9 +93,12 @@ To enable deployment:
 
 ## Brand Guidelines
 
+The site follows the King's Brand Essentials. The full colour palette, typography, and recommended theme are defined in `specs/kings-branding.md` (kept local; not in the repo).
+
 - **Heading font**: Impact (with fallbacks: Haettenschweiler, Arial Narrow Bold, Oswald, sans-serif)
 - **Body font**: Georgia (with fallbacks: Times New Roman, Times, serif)
-- **Primary colour**: King's Red `#E2231A` (contrast ratio 4.68:1 on white — passes WCAG 2.1 AA)
+- Headings use sentence case and are left-aligned; body text is left-aligned (no justified text)
+- Colour tokens, theme mapping, and contrast notes are defined in `src/assets/css/styles.css`
 
 ## Accessibility
 

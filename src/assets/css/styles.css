@@ -1,15 +1,29 @@
 :root {
-  --colour-primary: #E2231A;
-  --colour-primary-hover: #C01F16;
-  --colour-text: #1a1a1a;
-  --colour-text-muted: #555555;
-  --colour-background: #FFFFFF;
-  --colour-surface: #F8F8F8;
-  --colour-border: #DDDDDD;
+  /* King's brand palette — see specs/kings-branding.md */
 
+  /* Primary brand colours */
+  --kings-red: #E2231A;
+  --kings-red-dark: #C01F16;
+  --midnight-blue: #0A2D50;
+  --white: #FFFFFF;
+
+  /* Supporting colours */
+  --reflex-blue: #002395;
+  --teal-blue: #009EA0;
+  --slate-grey: #5A6469;
+  --pearl-grey: #CDD7DC;
+
+  /* Accent colours (used sparingly) */
+  --yellow: #F5B90F;
+
+  /* Derived — Slate Grey at 25% alpha, used for hairline borders */
+  --border: rgba(90, 100, 105, 0.25);
+
+  /* Typography */
   --font-heading: Impact, "Haettenschweiler", "Arial Narrow Bold", "Oswald", sans-serif;
   --font-body: Georgia, "Times New Roman", Times, serif;
 
+  /* Layout */
   --sidebar-width: 240px;
   --max-content-width: 960px;
 }
@@ -29,8 +43,8 @@ body {
   font-family: var(--font-body);
   font-size: 1.0625rem;
   line-height: 1.5;
-  color: var(--colour-text);
-  background-color: var(--colour-background);
+  color: var(--midnight-blue);
+  background-color: var(--white);
 }
 
 h1,
@@ -42,7 +56,7 @@ h6 {
   font-family: var(--font-heading);
   font-weight: normal;
   line-height: 1.2;
-  color: var(--colour-primary);
+  color: var(--kings-red);
   margin-top: 1.5em;
   margin-bottom: 0.5em;
 }
@@ -60,16 +74,16 @@ h3 {
 }
 
 a {
-  color: var(--colour-primary);
+  color: var(--reflex-blue);
   text-decoration: underline;
 }
 
 a:hover {
-  color: var(--colour-primary-hover);
+  color: var(--midnight-blue);
 }
 
 a:focus-visible {
-  outline: 3px solid var(--colour-primary);
+  outline: 3px solid var(--kings-red);
   outline-offset: 2px;
 }
 
@@ -78,29 +92,30 @@ a:focus-visible {
   left: -9999px;
   top: 0;
   padding: 0.5em 1em;
-  background-color: var(--colour-primary);
-  color: #FFFFFF;
+  background-color: var(--kings-red);
+  color: var(--white);
   font-weight: bold;
   z-index: 1000;
 }
 
 .skip-link:focus {
   left: 0;
-  color: #FFFFFF;
+  color: var(--white);
 }
 
+/* Demo banner — pale Yellow accent for the example-site disclaimer */
 .demo-banner {
-  background-color: #FEF3C7;
-  border-bottom: 1px solid #F59E0B;
+  background-color: rgba(245, 185, 15, 0.15);
+  border-bottom: 1px solid var(--yellow);
   padding: 0.75em 1.5rem;
-  text-align: center;
+  text-align: left;
 }
 
 .demo-banner p {
   margin: 0;
   font-size: 0.9375rem;
   line-height: 1.4;
-  color: var(--colour-text);
+  color: var(--midnight-blue);
 }
 
 .layout {
@@ -112,8 +127,8 @@ a:focus-visible {
 .sidebar {
   width: var(--sidebar-width);
   flex-shrink: 0;
-  background-color: var(--colour-surface);
-  border-right: 1px solid var(--colour-border);
+  background-color: var(--white);
+  border-right: 1px solid var(--border);
   padding: 1.5rem 1rem;
 }
 
@@ -124,13 +139,17 @@ a:focus-visible {
 }
 
 .sidebar__title a {
-  color: var(--colour-primary);
+  color: var(--kings-red);
   text-decoration: none;
+}
+
+.sidebar__title a:hover {
+  color: var(--kings-red-dark);
 }
 
 .sidebar__institution {
   font-size: 0.875rem;
-  color: var(--colour-text-muted);
+  color: var(--slate-grey);
   margin-bottom: 1.5em;
   line-height: 1.3;
 }
@@ -153,41 +172,41 @@ a:focus-visible {
   display: block;
   padding: 0.5em 0.75em;
   text-decoration: none;
-  color: var(--colour-text);
+  color: var(--midnight-blue);
   border-radius: 4px;
   border-left: 3px solid transparent;
 }
 
 .sidebar-nav a:hover {
-  background-color: #ECECEC;
-  color: var(--colour-primary);
+  background-color: var(--midnight-blue);
+  color: var(--white);
 }
 
 .sidebar-nav a:focus-visible {
-  outline: 3px solid var(--colour-primary);
+  outline: 3px solid var(--kings-red);
   outline-offset: -3px;
 }
 
 .sidebar-nav a[aria-current="page"] {
-  background-color: var(--colour-primary);
-  color: #FFFFFF;
-  border-left-color: var(--colour-primary-hover);
+  background-color: var(--kings-red);
+  color: var(--white);
+  border-left-color: var(--kings-red-dark);
   font-weight: bold;
 }
 
 .sidebar-nav a[aria-current="page"]:hover {
-  color: #FFFFFF;
-  background-color: var(--colour-primary-hover);
+  color: var(--white);
+  background-color: var(--kings-red-dark);
 }
 
 .sidebar__contact {
   font-size: 0.875rem;
-  color: var(--colour-text-muted);
+  color: var(--slate-grey);
   line-height: 1.4;
 }
 
 .sidebar__contact a {
-  color: var(--colour-text-muted);
+  color: var(--reflex-blue);
   text-decoration: underline;
 }
 
@@ -200,9 +219,101 @@ a:focus-visible {
 .site-footer {
   margin-top: 3em;
   padding-top: 1em;
-  border-top: 1px solid var(--colour-border);
+  border-top: 1px solid var(--border);
   font-size: 0.875rem;
-  color: var(--colour-text-muted);
+  color: var(--slate-grey);
+}
+
+/* Hero sections — Midnight Blue background, white heading, King's Red accent */
+.hero {
+  background-color: var(--midnight-blue);
+  color: var(--white);
+  padding: 2.5rem 2rem;
+  margin-top: 1em;
+  border-radius: 8px;
+}
+
+.hero__title {
+  color: var(--white);
+  font-size: 2.75rem;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+
+.hero__title::after {
+  content: "";
+  display: block;
+  width: 64px;
+  height: 4px;
+  background-color: var(--kings-red);
+  margin-top: 0.5em;
+}
+
+.hero__subtitle {
+  color: var(--pearl-grey);
+  font-size: 1.125rem;
+  max-width: 42em;
+  margin: 0 0 1.5em;
+}
+
+.hero__cta {
+  margin: 0;
+}
+
+/* Buttons / Calls to action — King's Red background, white text */
+.btn {
+  display: inline-block;
+  font-family: var(--font-heading);
+  font-size: 1.125rem;
+  padding: 0.6em 1.2em;
+  background-color: var(--kings-red);
+  color: var(--white);
+  text-decoration: none;
+  border-radius: 4px;
+  border: 2px solid var(--kings-red);
+}
+
+.btn:hover {
+  background-color: var(--kings-red-dark);
+  border-color: var(--kings-red-dark);
+  color: var(--white);
+}
+
+.btn:focus-visible {
+  outline: 3px solid var(--yellow);
+  outline-offset: 2px;
+}
+
+/* Alternate sections — Pearl Grey background, Midnight Blue text */
+.section--alt {
+  background-color: var(--pearl-grey);
+  color: var(--midnight-blue);
+  padding: 1.75rem 1.5rem;
+  border-radius: 8px;
+  margin-top: 1.5em;
+}
+
+.section--alt > :first-child {
+  margin-top: 0;
+}
+
+.section--alt h1,
+.section--alt h2,
+.section--alt h3 {
+  color: var(--midnight-blue);
+}
+
+/* Link list — used in the home "Explore the site" band */
+.link-list {
+  list-style: none;
+  padding: 0;
+  margin: 0.5em 0 0;
+  display: grid;
+  gap: 0.75em;
+}
+
+.link-list a {
+  font-weight: bold;
 }
 
 .team-grid {
@@ -213,8 +324,8 @@ a:focus-visible {
 }
 
 .team-card {
-  background-color: var(--colour-surface);
-  border: 1px solid var(--colour-border);
+  background-color: var(--white);
+  border: 1px solid var(--border);
   border-radius: 8px;
   overflow: hidden;
 }
@@ -229,11 +340,11 @@ a:focus-visible {
 .team-card__placeholder {
   width: 100%;
   aspect-ratio: 4 / 3;
-  background-color: #E0E0E0;
+  background-color: var(--pearl-grey);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #888888;
+  color: var(--midnight-blue);
   font-family: var(--font-heading);
   font-size: 3rem;
 }
@@ -248,7 +359,7 @@ a:focus-visible {
 }
 
 .team-card__role {
-  color: var(--colour-primary);
+  color: var(--kings-red);
   font-style: italic;
   margin: 0.25em 0 0.75em;
 }
@@ -263,7 +374,7 @@ a:focus-visible {
 }
 
 .output-group h2 {
-  border-bottom: 2px solid var(--colour-primary);
+  border-bottom: 2px solid var(--kings-red);
   padding-bottom: 0.25em;
 }
 
@@ -275,7 +386,7 @@ a:focus-visible {
 
 .output-list li {
   padding: 0.75em 0;
-  border-bottom: 1px solid var(--colour-border);
+  border-bottom: 1px solid var(--border);
 }
 
 .output-list li:last-child {
@@ -293,7 +404,7 @@ a:focus-visible {
 
 .output-list__meta {
   font-size: 0.875rem;
-  color: var(--colour-text-muted);
+  color: var(--slate-grey);
   margin: 0.25em 0;
 }
 
@@ -304,22 +415,28 @@ a:focus-visible {
 
 .output-empty {
   font-style: italic;
-  color: var(--colour-text-muted);
+  color: var(--slate-grey);
   padding: 0.5em 0;
 }
 
+/* Contact callout — Pearl Grey surface with King's Red accent border */
 .contact-box {
-  background-color: var(--colour-surface);
-  border: 1px solid var(--colour-border);
-  border-left: 4px solid var(--colour-primary);
+  background-color: var(--pearl-grey);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--kings-red);
   border-radius: 4px;
   padding: 1.25rem 1.5rem;
   margin: 1.5em 0;
+  color: var(--midnight-blue);
 }
 
 .contact-box__link {
   font-size: 1.125rem;
   font-weight: bold;
+}
+
+.contact-box__link a {
+  color: var(--reflex-blue);
 }
 
 @media (max-width: 768px) {
@@ -330,7 +447,7 @@ a:focus-visible {
   .sidebar {
     width: 100%;
     border-right: none;
-    border-bottom: 1px solid var(--colour-border);
+    border-bottom: 1px solid var(--border);
     padding: 1rem;
   }
 
@@ -357,7 +474,7 @@ a:focus-visible {
 
   .sidebar-nav a[aria-current="page"] {
     border-left: none;
-    border-bottom-color: var(--colour-primary-hover);
+    border-bottom-color: var(--kings-red-dark);
   }
 }
 
@@ -376,5 +493,13 @@ a:focus-visible {
 
   .team-grid {
     grid-template-columns: 1fr;
+  }
+
+  .hero {
+    padding: 1.75rem 1.25rem;
+  }
+
+  .hero__title {
+    font-size: 2rem;
   }
 }
