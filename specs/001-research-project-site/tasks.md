@@ -90,10 +90,10 @@
 
 ### Implementation for User Story 3
 
-- [ ] T016 [P] [US3] Create `src/_data/outputs.json` with sample research outputs array per data-contracts.md schema (title, type enum: publication/dataset/software, description, url, optional year and authors)
-- [ ] T017 [P] [US3] Create `src/_includes/components/output-list.njk` — component that groups `outputs` by `type` into three sections (Publications, Datasets, Software) with `<h2>` headings, renders each output as a link to its `url` with description, and displays "No [type] listed yet" for empty categories (per FR-006, FR-007, edge case)
-- [ ] T018 [US3] Create `src/outputs.md` with frontmatter `layout: layouts/base.njk` and `title: "Outputs"`, including the `output-list.njk` component (depends on T016, T017)
-- [ ] T019 [US3] Verify Outputs page renders at `/outputs/` with outputs grouped by type, each entry linking to its external resource, and empty categories showing the "empty state" message per SC-004
+- [X] T016 [P] [US3] Create `src/_data/outputs.json` with sample research outputs array per data-contracts.md schema (title, type enum: publication/dataset/software, description, url, optional year and authors)
+- [X] T017 [P] [US3] Create `src/_includes/components/output-list.njk` — component that groups `outputs` by `type` into three sections (Publications, Datasets, Software) with `<h2>` headings, renders each output as a link to its `url` with description, and displays "No [type] listed yet" for empty categories (per FR-006, FR-007, edge case)
+- [X] T018 [US3] Create `src/outputs.njk` with frontmatter `layout: layouts/base.njk` and `title: "Outputs"`, including the `output-list.njk` component (depends on T016, T017)
+- [X] T019 [US3] Verify Outputs page renders at `/outputs/` with outputs grouped by type, each entry linking to its external resource, and empty categories showing the "empty state" message per SC-004
 
 **Checkpoint**: User Stories 1, 2, AND 3 all work independently — site now explains the method, enables engagement, and lists research outputs.
 
