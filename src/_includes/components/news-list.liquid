@@ -1,0 +1,6 @@
+<article class="news-item">
+  <time class="news-item__date" datetime="{{ item.date | replace: '-', '' }}">{{ item.date | replace: '-', '/' }}</time>
+  <h3 class="news-item__title">{{ item.title }}</h3>
+  <p class="news-item__summary">{{ item.summary }}</p>
+  {%- if item.link %}<p class="news-item__link"><a href="{{ item.link }}">{{ item.linkText }}</a></p>{%- endif %}
+</article>

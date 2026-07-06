@@ -7,7 +7,9 @@ An example academic research website demonstrating a static project site for the
 - **Home page** — Hero banner, project overview, and links to all sections
 - **About** — Detailed description of the electron microscopy method, its applications, and limitations
 - **The Team** — Team member profiles with photos (graceful degradation when no photo available)
-- **Outputs** — Research publications, datasets, and software grouped by type, each linking to the full resource
+- **Outputs** — Research publications, datasets, software, and industry outputs grouped by type, each linking to the full resource
+- **News** — Recent updates including publications, partnerships, and events, listed in reverse chronological order
+- **Collaborators** — Industry partners and academic collaborators with role descriptions
 - **Work with Us** — Commercial engagement process with a mailto contact link
 - **Example site banner** — Persistent banner on every page making clear this is an example static site with fictional people and outputs
 - **Left-side navigation** — Persistent sidebar on every page with active state highlighting
@@ -55,12 +57,16 @@ src/
 │   └── components/
 │       ├── nav.liquid         # Left navigation with aria-current active state
 │       ├── team-card.liquid   # Reusable team member card
-│       ├── output-list.liquid # Outputs grouped by type (publications, datasets, software)
-│       └── contact-link.liquid # Mailto link with visible text fallback
+│       ├── output-list.liquid    # Outputs grouped by type (publications, datasets, software, industry)
+│       ├── contact-link.liquid   # Mailto link with visible text fallback
+│       ├── news-list.liquid      # Reusable news item with date, title, and summary
+│       └── collaborator-card.liquid # Reusable collaborator card with name, type, and description
 ├── _data/
 │   ├── site.json              # Site metadata (name, institution, contact email, nav items)
 │   ├── team.json              # Team members (name, role, bio, photo)
-│   └── outputs.json           # Research outputs (title, type, description, url)
+│   ├── outputs.json           # Research outputs (title, type, description, url)
+│   ├── news.json              # News items (title, date, summary, link)
+│   └── collaborators.json     # Collaborators (name, type, description, url)
 ├── assets/
 │   ├── css/
 │   │   └── styles.css         # Brand styles, responsive layout, component styles
@@ -70,7 +76,9 @@ src/
 ├── about.md                   # About page
 ├── team.md                    # Team page (data-driven)
 ├── outputs.md                 # Outputs page (data-driven)
-└── work-with-us.md            # Work with Us page
+├── work-with-us.md            # Work with Us page
+├── news.md                    # News page (data-driven)
+└── collaborators.md           # Collaborators page (data-driven)
 ```
 
 ## Data Model
@@ -79,7 +87,9 @@ Content is managed via JSON data files in `src/_data/`:
 
 - **site.json** — Site-wide metadata: name, institution, contactEmail, navItems
 - **team.json** — Array of team members: name, role, bio, photo (optional)
-- **outputs.json** — Array of research outputs: title, type (publication/dataset/software), description, url, year (optional), authors (optional)
+- **outputs.json** — Array of research outputs: title, type (publication/dataset/software/industry), description, url, year (optional), authors (optional)
+- **news.json** — Array of news items: title, date, summary, link (optional), linkText (optional)
+- **collaborators.json** — Array of collaborators: name, type, description, url (optional)
 
 To add or update content, edit the relevant JSON file and rebuild.
 

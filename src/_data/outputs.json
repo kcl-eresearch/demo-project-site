@@ -30,5 +30,21 @@
     "url": "https://example.com/software-defect-analyser",
     "year": 2025,
     "authors": "Patel, R."
+  },
+  {
+    "title": "Standards committee contribution: surface finish specifications for additive manufacturing",
+    "type": "industry",
+    "description": "The team contributed electron microscopy expertise to the development of surface quality specifications for metal additive manufacturing components, now under review by the BSI committee.",
+    "url": "#",
+    "year": 2024,
+    "authors": "Patel, R., Smith, J."
+  },
+  {
+    "title": "Industry white paper: best practices for SEM-based fatigue crack analysis",
+    "type": "industry",
+    "description": "A practical guide covering sample preparation, imaging parameters, and data analysis protocols for characterising fatigue cracks using scanning electron microscopy.",
+    "url": "#",
+    "year": 2024,
+    "authors": "Smith, J., Chen, L., Doe, J."
   }
 ]

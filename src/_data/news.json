@@ -1,0 +1,37 @@
+[
+  {
+    "title": "Presented at Microscopy 2025: automated defect detection using SEM",
+    "date": "2025-05-15",
+    "summary": "Dr Smith presented the team's machine learning pipeline for automated surface defect classification at the Microscopy 2025 conference in Birmingham.",
+    "link": "#",
+    "linkText": "Read the presentation summary"
+  },
+  {
+    "title": "New partnership with Advanced Engineering Materials Ltd",
+    "date": "2025-03-10",
+    "summary": "The group has entered a three-year collaborative assessment programme with Advanced Engineering Materials to characterise surface integrity in high-performance turbine blades.",
+    "link": "#",
+    "linkText": "View press release"
+  },
+  {
+    "title": "Paper accepted in the Journal of Materials Science",
+    "date": "2025-01-22",
+    "summary": "A study on fatigue crack initiation in nickel-based superalloys has been accepted for publication, featuring high-resolution TEM images and EBSD analysis.",
+    "link": "https://example.com/publication-superalloy-2023",
+    "linkText": "Read the paper"
+  },
+  {
+    "title": "Defect analyser tool v2.0 released",
+    "date": "2024-11-08",
+    "summary": "An updated release of the open-source defect classification tool adds support for TEM images and a new random forest classifier for multi-class defect detection.",
+    "link": "https://example.com/software-defect-analyser",
+    "linkText": "View on GitHub"
+  },
+  {
+    "title": "Hosted industry workshop on electron microscopy best practices",
+    "date": "2024-09-18",
+    "summary": "Ten companies participated in a one-day workshop covering sample preparation, imaging protocols, and data analysis for surface defect characterisation.",
+    "link": "#",
+    "linkText": "View workshop materials"
+  }
+]

@@ -3,21 +3,18 @@ layout: layouts/base.liquid
 title: Home
 ---
 
-<section class="hero">
-  <h1 class="hero__title">Electron Microscopy Surface Defect Research</h1>
-  <p class="hero__subtitle">Using advanced electron microscopy to identify and characterise surface defects in engineering components.</p>
-  <p class="hero__cta"><a class="btn" href="/about/">Learn about the method</a></p>
-</section>
+# Electron Microscopy Surface Defect Research
 
-<section class="section--alt">
-  <h2>Explore the site</h2>
-  <ul class="link-list">
-    <li><a href="/about/">About</a> — Learn about the electron microscopy method, its applications, and limitations.</li>
-    <li><a href="/team/">The team</a> — Meet the researchers behind the project.</li>
-    <li><a href="/outputs/">Outputs</a> — Browse our publications, datasets, and software.</li>
-    <li><a href="/work-with-us/">Work with us</a> — Find out how your company can work with us to assess your components.</li>
-  </ul>
-</section>
+Using advanced electron microscopy to identify and characterise surface defects in engineering components.
+
+## Explore the site
+
+- [About](/about/) — Learn about the electron microscopy method, its applications, and limitations.
+- [The team](/team/) — Meet the researchers behind the project.
+- [Outputs](/outputs/) — Browse our publications, datasets, and software.
+- [News](/news/) — Latest project updates, publications, and events.
+- [Collaborators](/collaborators/) — Industry and academic partners working with the group.
+- [Work with us](/work-with-us/) — Find out how your company can work with us to assess your components.
 
 ## About the project
 

@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Advanced Engineering Materials Ltd",
+    "type": "Industry",
+    "description": "A leading manufacturer of high-performance turbine components for the aerospace and power generation sectors. Partner since 2025 for surface integrity assessment of nickel-based superalloys.",
+    "url": "#"
+  },
+  {
+    "name": "National Physical Laboratory",
+    "type": "Research organisation",
+    "description": "The UK's national metrology institute, collaborating on the development of reference samples and calibration standards for electron microscopy-based defect characterisation.",
+    "url": "https://www.npl.co.uk"
+  },
+  {
+    "name": "University of Sheffield",
+    "type": "Academic",
+    "description": "Collaboration with the Department of Materials Science and Engineering on fatigue crack growth studies in titanium alloys using TEM and in-situ mechanical testing.",
+    "url": "https://www.sheffield.ac.uk/materials"
+  },
+  {
+    "name": "Rolls-Royce plc",
+    "type": "Industry",
+    "description": "Joint research into surface defect analysis of additively manufactured turbine blades, focusing on lack-of-fusion defects and surface roughness effects on fatigue life.",
+    "url": "https://www.rolls-royce.com"
+  },
+  {
+    "name": "Imperial College London",
+    "type": "Academic",
+    "description": "Partnership on machine learning approaches for automated defect classification, with a focus on unsupervised anomaly detection in electron microscopy image datasets.",
+    "url": "https://www.imperial.ac.uk"
+  }
+]

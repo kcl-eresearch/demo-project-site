@@ -68,4 +68,8 @@ At King's College London, our research group combines electron microscopy with a
 
 We work with a range of engineering materials, including steels, titanium alloys, nickel-based superalloys, and aluminium alloys. Our facilities include field-emission SEM and TEM instruments equipped with EDS and electron backscatter diffraction (EBSD) for comprehensive microstructural characterisation.
 
+## Funding
+
+This research is supported by the Engineering and Physical Sciences Research Council (EPSRC) under grant EP/X1234/1. Additional support has been provided by EPSRC's Industry Academy Alliance programme and by the UK's National Measurement System programme.
+
 For more information about how your organisation can work with us, please visit our [Work with Us](/work-with-us/) page.

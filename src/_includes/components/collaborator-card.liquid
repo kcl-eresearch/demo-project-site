@@ -1,0 +1,8 @@
+<article class="collaborator-card">
+  <div class="collaborator-card__body">
+    <h3>{{ collaborator.name }}</h3>
+    <p class="collaborator-card__type">{{ collaborator.type }}</p>
+    <p class="collaborator-card__description">{{ collaborator.description }}</p>
+    {%- if collaborator.url %}<p class="collaborator-card__link"><a href="{{ collaborator.url }}">Visit website</a></p>{%- endif %}
+  </div>
+</article>

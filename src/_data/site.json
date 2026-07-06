@@ -6,6 +6,8 @@
     { "label": "About", "url": "/about/" },
     { "label": "The team", "url": "/team/" },
     { "label": "Outputs", "url": "/outputs/" },
+    { "label": "News", "url": "/news/" },
+    { "label": "Collaborators", "url": "/collaborators/" },
     { "label": "Work with us", "url": "/work-with-us/" }
   ]
 }
