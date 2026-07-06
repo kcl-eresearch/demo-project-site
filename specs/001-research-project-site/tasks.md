@@ -107,10 +107,10 @@
 
 ### Implementation for User Story 4
 
-- [ ] T020 [P] [US4] Create `src/_data/team.json` with sample team members array per data-contracts.md schema (name, role, bio, photo — include at least one member with empty photo to test graceful degradation)
-- [ ] T021 [P] [US4] Create `src/_includes/components/team-card.njk` — reusable component rendering a team member card with `<h2>` name, `<p>` role, photo `<img>` with descriptive `alt` if photo provided, styled placeholder if not (no broken image), and `<div>` bio (per FR-005 and edge case)
-- [ ] T022 [US4] Create `src/team.md` with frontmatter `layout: layouts/base.njk` and `title: "The Team"`, iterating `team` array using the `team-card.njk` component (depends on T020, T021)
-- [ ] T023 [US4] Verify Team page renders at `/team/` with each member showing name, role, bio, and photo where available; verify member without photo degrades gracefully (no broken image) per FR-005
+- [X] T020 [P] [US4] Create `src/_data/team.json` with sample team members array per data-contracts.md schema (name, role, bio, photo — include at least one member with empty photo to test graceful degradation)
+- [X] T021 [P] [US4] Create `src/_includes/components/team-card.njk` — reusable component rendering a team member card with `<h2>` name, `<p>` role, photo `<img>` with descriptive `alt` if photo provided, styled placeholder if not (no broken image), and `<div>` bio (per FR-005 and edge case)
+- [X] T022 [US4] Create `src/team.njk` with frontmatter `layout: layouts/base.njk` and `title: "The Team"`, iterating `team` array using the `team-card.njk` component (depends on T020, T021)
+- [X] T023 [US4] Verify Team page renders at `/team/` with each member showing name, role, bio, and photo where available; verify member without photo degrades gracefully (no broken image) per FR-005
 
 **Checkpoint**: All four user stories now work independently — the site is feature-complete.
 

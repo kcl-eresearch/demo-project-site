@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Dr. Jane Smith",
+    "role": "Principal Investigator",
+    "bio": "Jane leads the electron microscopy research group at King's College London. Her research focuses on characterising surface defects in engineering alloys using advanced SEM and TEM techniques.",
+    "photo": ""
+  },
+  {
+    "name": "Dr. John Doe",
+    "role": "Research Associate",
+    "bio": "John specialises in surface defect analysis and automated image classification. He developed the machine learning pipeline used in our defect detection workflow.",
+    "photo": ""
+  },
+  {
+    "name": "Dr. Ravi Patel",
+    "role": "Research Associate",
+    "bio": "Ravi works on EDS and EBSD analysis of engineering materials, with a particular interest in grain boundary characterisation and inclusion typing.",
+    "photo": ""
+  },
+  {
+    "name": "Dr. Lin Chen",
+    "role": "Postdoctoral Researcher",
+    "bio": "Lin's research examines fatigue crack initiation in nickel-based superalloys for aerospace applications, combining TEM and EBSD to understand microstructural drivers of crack formation.",
+    "photo": ""
+  },
+  {
+    "name": "Maria Garcia",
+    "role": "PhD Researcher",
+    "bio": "Maria is investigating the use of electron microscopy for quality control of additively manufactured metal components, focusing on lack-of-fusion and keyhole porosity defects.",
+    "photo": ""
+  }
+]
