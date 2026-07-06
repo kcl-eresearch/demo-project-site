@@ -1,0 +1,14 @@
+<nav class="sidebar-nav" aria-label="Main navigation">
+  <ul>
+    {% for item in site.navItems %}
+      <li>
+        <a
+          href="{{ item.url | url }}"
+          {% if page.url == item.url %}aria-current="page"{% endif %}
+        >
+          {{ item.label }}
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</nav>

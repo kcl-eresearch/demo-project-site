@@ -40,12 +40,12 @@
 
 **CRITICAL**: No user story work can begin until this phase is complete
 
-- [ ] T005 [P] Create `src/_data/site.json` with site metadata (name, institution "King's College London", contactEmail, navItems array with 4 page links per data-contracts.md schema)
-- [ ] T006 [P] Create `src/assets/css/styles.css` with brand tokens (CSS variables: King's Red #E2231A, Impact heading font with fallbacks, Georgia body font with fallbacks), responsive left-nav + content layout (desktop side-by-side, mobile reflow), skip link styles, visible focus outlines, base typography (body >= 16px, line-height 1.5)
-- [ ] T007 Create `src/_includes/components/nav.njk` — left navigation component iterating `site.navItems`, active state via `aria-current="page"` comparing `page.url`, links passed through `| url` filter (depends on T005)
-- [ ] T008 Create `src/_includes/layouts/base.njk` — base HTML shell with `<html lang="en">`, `<head>` (title from frontmatter, stylesheet link via `| url` filter), skip link to `#main-content`, nav include, `<main id="main-content">{{ content | safe }}</main>`, footer with KCL name and contact email (depends on T007)
-- [ ] T009 Create `src/index.md` home page with frontmatter `layout: layouts/base.njk` and `title`, brief project introduction, and links to all four main pages (depends on T008)
-- [ ] T010 Verify build succeeds (`npx @11ty/eleventy --serve`) and home page renders at `http://localhost:8080/` with left navigation visible and functional
+- [X] T005 [P] Create `src/_data/site.json` with site metadata (name, institution "King's College London", contactEmail, navItems array with 4 page links per data-contracts.md schema)
+- [X] T006 [P] Create `src/assets/css/styles.css` with brand tokens (CSS variables: King's Red #E2231A, Impact heading font with fallbacks, Georgia body font with fallbacks), responsive left-nav + content layout (desktop side-by-side, mobile reflow), skip link styles, visible focus outlines, base typography (body >= 16px, line-height 1.5)
+- [X] T007 Create `src/_includes/components/nav.njk` — left navigation component iterating `site.navItems`, active state via `aria-current="page"` comparing `page.url`, links passed through `| url` filter (depends on T005)
+- [X] T008 Create `src/_includes/layouts/base.njk` — base HTML shell with `<html lang="en">`, `<head>` (title from frontmatter, stylesheet link via `| url` filter), skip link to `#main-content`, nav include, `<main id="main-content">{{ content | safe }}</main>`, footer with KCL name and contact email (depends on T007)
+- [X] T009 Create `src/index.md` home page with frontmatter `layout: layouts/base.njk` and `title`, brief project introduction, and links to all four main pages (depends on T008)
+- [X] T010 Verify build succeeds (`npx @11ty/eleventy --serve`) and home page renders at `http://localhost:8080/` with left navigation visible and functional
 
 **Checkpoint**: Foundation ready — home page renders, navigation works, brand styles applied. User story implementation can now begin.
 
